@@ -1,0 +1,207 @@
+/* 
+=============
+Variables
+=============
+*/
+
+:root {
+    /*Colours*/
+    --primary: #3EBAFD;
+    --light: #FFFFFF;
+    --lightblue: #006BC9;
+    --deepblue: #373AE8;
+    --gray: #171717;
+    /*Shadow*/
+    --shadow: 2px 7px 50px #000000;
+}
+
+
+/* 
+=============
+Misc 
+=============
+*/
+
+#mask {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.7;
+    display: none;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.line {
+    width: 76.08px;
+    height: 3.44px;
+    left: 206.35px;
+    top: 259px;
+    background: var(--deepblue);
+    margin: 30px 0px;
+}
+
+body {
+    font-family: tahoma;
+}
+
+.container {
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-align {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.even-align {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*
+============
+Presets
+*/
+
+
+/*
+=============
+Background-preset
+=============
+*/
+
+.background-preset {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*
+=============
+Div Styles
+=============
+*/
+
+.full-width {
+    width: 100%;
+}
+
+.container-preset {
+    padding-top: 60px;
+    background-color: var(--gray);
+    width: 100%;
+}
+
+.content-preset {
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+
+/*
+=============
+Grid
+=============*/
+
+.grid-preset {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 100px;
+}
+
+
+/* 
+=============
+typography 
+=============
+*/
+
+.header-preset,
+.mini-header-preset {
+    font-size: 3.5rem;
+    color: white;
+    width: 130%;
+}
+
+.mini-header-preset {
+    font-size: 2.3rem;
+    color: var(--lightblue);
+}
+
+
+/* Sub header*/
+
+.sub-header-preset {
+    font-size: 1.3rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub-header-preset .main {
+    color: var(--lightblue);
+}
+
+.sub-header-preset .sub {
+    text-align: right;
+    color: rgb(199, 199, 199);
+    text-transform: initial;
+}
+
+.caption-preset {
+    color: rgb(207, 207, 207);
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 20px 0px;
+}
+
+
+/* 
+=============
+Buttons 
+=============
+*/
+
+.btn-preset {
+    width: 141px;
+    height: 41px;
+    border: 4px solid var(--lightblue);
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
