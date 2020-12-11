@@ -1,0 +1,374 @@
+body {
+    background-color: var(--secondary);
+}
+
+.container {
+    height: 100vh;
+}
+
+.wrapper {
+    height: 65vh;
+    grid-template-columns: 1fr 3fr;
+    width: 70%;
+    -webkit-box-shadow: -4px 2px 50px -19px rgba(84, 84, 84, 1);
+    -moz-box-shadow: -4px 2px 50px -19px rgba(84, 84, 84, 1);
+    box-shadow: -4px 2px 50px -19px rgba(84, 84, 84, 1);
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 900px;
+}
+
+
+/*
+==============
+Left sidebar
+==============
+*/
+
+.left-sidebar {
+    background-color: var(--dark);
+    overflow-x: hidden;
+    height: 65vh;
+    overflow-y: auto;
+}
+
+.line {
+    background-color: rgb(129, 129, 129);
+    height: 1px;
+    width: 100%;
+}
+
+.left-sidebar .menu .header {
+    border-bottom: 1px solid rgb(129, 129, 129);
+    padding: 25px;
+    min-width: 200px;
+    background-color: black;
+}
+
+.left-sidebar .menu .header .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fc5185;
+    text-transform: capitalize;
+}
+
+.left-sidebar .menu .header .sub-text {
+    font-size: 0.9rem;
+    color: #dee1ec;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.left-sidebar .menu ul {
+    list-style-type: none;
+    margin: 45px 5px;
+    width: 90%;
+}
+
+.left-sidebar .menu ul li {
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: var(--light);
+    margin: 0px 0px 15px 0px;
+    transition: 0.3s;
+}
+
+.left-sidebar .menu ul li:hover,
+.left-sidebar .menu ul li:focus {
+    background-color: var(--light);
+    color: #2b2b2b;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.left-sidebar .menu ul .active {
+    background-color: var(--light);
+    color: #2b2b2b;
+}
+
+.left-sidebar .menu ul li .label {
+    margin-left: 25px;
+    font-size: 0.9rem;
+}
+
+.logout-btn {
+    background-color: #fc5185;
+}
+
+.logout-btn:hover {
+    transition: 0.3s;
+    background-color: black;
+}
+
+
+/*
+==============
+Content Area
+==============
+*/
+
+.content-area {
+    background-color: #F9F9F9;
+}
+
+.content {
+    height: 65vh;
+    display: none;
+}
+
+
+/*
+===============
+Login
+===============
+*/
+
+.login {
+    min-width: 60%;
+    min-height: 70%;
+    text-align: ;
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 2px 55px -19px rgba(84, 84, 84, 1);
+    -moz-box-shadow: -4px 2px 55px -19px rgba(84, 84, 84, 1);
+    box-shadow: -4px 2px 55px -19px rgba(84, 84, 84, 1);
+    margin: 20px;
+}
+
+.login .header-text {
+    font-size: 2rem;
+    margin: 60px 0px;
+    color: #fc5185;
+}
+
+.login .form-items {
+    margin-top: 20px;
+}
+
+.login .form-items input {
+    margin: 5px 0px;
+    width: 100%;
+    border: 0;
+}
+
+.login .form-items input[type="text"],
+.login .form-items input[type="password"] {
+    border-bottom: 1px solid rgba(221, 221, 221);
+    padding: 15px 0px 10px 0px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.login .form-items input[type="text"]:hover,
+.login .form-items input[type="password"]:hover {
+    border-bottom: 1px solid rgba(221, 221, 221);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.login .form-items input::placeholder {
+    color: red;
+}
+
+.login .form-items input[type="submit"] {
+    background-color: #3d6cb9;
+    color: white;
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 10px 10px;
+    border: 2px solid #226089;
+    transition: 0.3s;
+}
+
+.login .form-items input[type="submit"]:hover {
+    padding: 11px 12px;
+    background-color: #2b2b2b;
+    transition: 0.3s;
+}
+
+
+/*
+===============
+Student Registration
+===============
+*/
+
+#studentReg {
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+    height: 65vh;
+}
+
+#studentReg .form {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#studentReg .form .header {
+    width: 60%;
+    margin: 75px auto;
+}
+
+#studentReg .form .header .text {
+    color: #0D9CA0;
+    margin: 10px 0px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#studentReg .form .header .logo {
+    max-width: 130px;
+    animation-name: logo-animation;
+    animation-duration: 10s;
+    animation-delay: -2s;
+}
+
+@keyframes logo-animation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(3600deg);
+    }
+}
+
+#studentReg .form .header .sub-text {
+    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#studentReg .form form {
+    margin-top: 30px;
+}
+
+#studentReg .form form ul {
+    list-style-type: none;
+    width: 70%;
+    margin: auto;
+}
+
+#studentReg .form form ul li {
+    margin: 15px 0px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    grid-column-gap: 20%;
+}
+
+#studentReg .form form ul li .label {
+    font-size: 0.8rem;
+    color: #5c5c5c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #0D9CA0;
+}
+
+#studentReg .form .gender-label {
+    font-weight: normal;
+    padding: 5px;
+}
+
+#studentReg .form form ul li input[type="text"],
+#studentReg .form form ul li input[type="date"],
+#studentReg .form form ul li input[type="email"],
+#studentReg .form form ul li select {
+    background-color: #ececec;
+    border-radius: 4px;
+    color: #5c5c5c;
+    padding: 12px 12px;
+    border: 0;
+    width: 100%;
+}
+
+#studentReg .form form ul li input[type="text"]:hover,
+#studentReg .form form ul li input[type="email"]:hover,
+#studentReg .form form ul li input[type="date"]:hover {
+    border: 1px solid #5c5c5c;
+}
+
+#studentReg .form form .buttons {
+    width: 60%;
+    margin: 25px auto;
+}
+
+#studentReg .form form .buttons input {
+    padding: 12px 30px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 0;
+    color: rgb(231, 231, 231);
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+#studentReg .form form .buttons input:hover {
+    padding: 14px 32px;
+    transition: 0.3s;
+}
+
+#studentReg .form form .buttons input[type="reset"] {
+    background-color: #322B57;
+}
+
+#studentReg .form form .buttons input[type="submit"] {
+    background-color: #0DA1A1;
+}
+
+#studentReg .image {
+    background-image: url(../IMG/std.jpg);
+    height: 100%;
+}
+
+
+/*
+================
+Media Queries
+================
+*/
+
+@media (max-width: 1545px) {
+    .wrapper {
+        height: 85vh;
+        width: 95%;
+    }
+    .left-sidebar {
+        height: 85vh;
+    }
+    #studentReg {
+        grid-template-columns: 5fr 1fr;
+        overflow: hidden;
+    }
+    #studentReg {
+        height: 87vh;
+    }
+}
+
+@media (max-width: 911px) {
+    .wrapper {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+    }
+    .left-sidebar {
+        height: 100vh;
+    }
+    #studentReg {
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+    #studentReg {
+        height: 100vh;
+    }
+    #studentReg .image {
+        display: none;
+    }
+}
